@@ -5,6 +5,19 @@
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
 
+
+```Smali
+.method public static my_log()V
+    .locals 2
+
+    const-string v0, "LOG_TAG"
+    const-string v0, "Text to log"
+    invoke-static {v0, p0}, Landroid/util/Log;->V(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+```
+
 <!--
 **Dakyz/Dakyz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
